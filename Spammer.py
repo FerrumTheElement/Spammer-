@@ -1,4 +1,4 @@
-from pynput.keyboard import Key, Controller
+
 import time
 import subprocess
 import os
@@ -6,7 +6,7 @@ import os
 clear = lambda : os.system('cls')
 def clear():
     os.system( 'cls' )
-keyboard = Controller()
+
 
 subprocess.run('python -m pip install -U pip')
 subprocess.run('pip install pynput')
@@ -22,11 +22,8 @@ print(" █        █████   █   █   █   █    ███   █   
 print("------------------------------------------------------------")
 print("{███████████████████████████████████████████████████████████}")
 
-
-
-
-
-
+from pynput.keyboard import Key, Controller
+keyboard = Controller()
 
 a = input("What do You want to SPAM?: ")
 b = float(input("Type the delay you want to input per word IN SECONDS: "))
@@ -46,5 +43,5 @@ if z == '2':
         keyboard.type(a)
         time.sleep(b)
 print("Spamming started")
-g = input("Press 'a' to stop spamming")
+
 
