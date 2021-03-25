@@ -1,6 +1,5 @@
 
 import time
-import subprocess
 import os
 
 clear = lambda : os.system('cls')
@@ -8,8 +7,8 @@ def clear():
     os.system( 'cls' )
 
 
-subprocess.run('python -m pip install -U pip')
-subprocess.run('pip install pynput')
+os.system('python -m pip install -U pip')
+os.system('pip install pynput')
 clear()
 
 
