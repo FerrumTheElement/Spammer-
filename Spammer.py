@@ -2,9 +2,8 @@
 import time
 import os
 
-clear = lambda : os.system('cls')
 def clear():
-    os.system( 'cls' )
+    os.system("cls")
 
 
 os.system('python -m pip install -U pip')
@@ -42,5 +41,3 @@ if z == '2':
         keyboard.type(a)
         time.sleep(b)
 print("Spamming started")
-
-
