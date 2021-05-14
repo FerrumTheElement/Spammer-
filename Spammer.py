@@ -34,8 +34,6 @@ if z == '1':
         time.sleep(b)
         keyboard.press_and_release('enter')
         if keyboard.is_pressed(hotkey):
-            1
-            1
             exit(-1)
 if z == '2':
     while True:
